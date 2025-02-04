@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+
+
+
+.personal_info {
+    text-align: center;
+    padding: 40px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+
+.info h1 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.personal_info p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.personal_info a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #3498db;
+    border: 1px solid #3498db;
+    border-radius: 20px;
+}
+
+
+.personal_info h1 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.personal_info p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.personal_info a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #3498db;
+    border: 1px solid #3498db;
+    border-radius: 20px;
+}
+
+.info {
+    text-align: center;
+    padding: 40px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+
+
+.personal_info p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.personal_info a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #3498db;
+    border: 1px solid #3498db;
+    border-radius: 20px;
+}
+
+
+.personal_info h1 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+
+.personal_info p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.personal_info a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #3498db;
+    border: 1px solid #3498db;
+    border-radius: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin: 30px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border: none;
+}
+
+.table th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 500;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+ul, ol {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+li {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+div:not(.info) {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 40px;
+    }
+
+    .skills ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 14px;
+    }
+
+    .info h1 {
+        font-size: 1.5em;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+}
+
+@media print {
+    body {
+        padding: 20px;
+        font-size: 12pt;
+    }
+
+    .info a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    .table {
+        page-break-inside: avoid;
+    }
+
+    div {
+        page-break-inside: avoid;
+    }
+}
+
+
+</style>
+</head>
+<body>
+
+    <div class="info">
+        <h1>Ayush Dayal</h1>
+        <p>Address: Pune, Maharashtra</p>
+        <p>Mobile No. : 9999999990</p>
+        <!-- <a href="https://www.linkedin.com/in/ayushdayal8/" alt="Linkedin">Linkedin</a>
+        <a href="https://github.com/ayushdayal900" alt="Github">Github</a>
+        <a href="http://leetcode.com/u/ayushdayal900/l" alt="Leetcode">Leetcode</a>
+        <a href="https://www.credly.com/users/ayush-dayal.c8f665f3" alt="Credly">Credly</a>
+        <hr> -->
+    </div>
+    <div class="personal_info">
+        <a href="#edu" alt="Education">Education</a>
+        <a href="#exp" alt="Experiences">Experiences</a>
+        <a href="#skills" alt="Skills">Skills</a>
+        <a href="#certs" alt="Certifications">Certifications</a>
+        <a href="#projects" alt="projects">projects</a>
+        <a href="#achievements" alt="achievements">achievements</a>
+        <a href="#co-cu" alt="co-curicular">co-cricular</a>
+        <a href="#langs" alt="Languages">Languages</a>
+    </div>
+    <div class="education" id="edu">
+        <h2>Education</h2>
+        <table class="table" width="100%" height="400px">
+            <tr>
+                <th>Standard</th>
+                <th>Institute</th>
+                <th>CGPA / Percentage </th>
+            </tr>
+            <tr>
+                <td>10th</td>
+                <td>Nath Vidyalaya, Mpir</td>
+                <td>89%</td>
+            </tr>
+            <tr>
+                <td>12th</td>
+                <td>Y.C. College, Mpir</td>
+                <td>87%</td>
+            </tr>
+            <tr>
+                <td>B.Tech</td>
+                <td>VIIT Pune</td>
+                <td>8.65</td>
+            </tr>
+            <tr>
+                <td>BSC</td>
+                <td>IITM</td>
+                <td>7</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="exp" id="exp">
+        <h2>Experiences</h2>
+        <ol>
+            <li>EduSkills Foundation - Web Developer  Intern</li>
+            <li>Amazon Web Services - Cloud Intern</li>
+            <li>Google - AI/ML Intern</li>
+        </li>
+    </div>
+
+    <div class="skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Language - Python, Java, C, C++, JavaScript</li>
+            <li>Machine Learning - Statistics, Regression, Clustering</li>
+            <li>Database - MySQL, SQLite, PostgreSQL</li>
+            <li>Cloud Computing - AWS, MS Azure</li>
+            <li>Microsoft Office - MS Word, MS Excel, MS PowerPoint</li>
+            <li>Technical Skills - Power BI, Data Visualization Tools, Data Structures and Algorithms (DSA)</li>
+        </ul>
+    </div>
+
+    <div class="certs" id="certs">
+        <h2>Cerifications</h2>
+        <ul>
+            <li>IITM-Foundation: IITM: Foundation Level in Programming and Data Science</li>
+            <li>AZ-900: Microsoft Certified : Azure Data Fundamentals</li>
+            <li>AI-900: Microsoft Certified : Azure AI Fundamentals</li>
+            <li>DP-900: Microsoft Certified : Azure Data Fundamentals</li>
+            <li>SC-900: Microsoft Certified : Security,Compliance, and Identity Fundamentals</li>
+            <li>OCI-GEN AI: Oracle Certified: Oracle Cloud Infrastructure Generative AI Professional Certificate</li>
+            <li>OCI-Foundation Associate: Oracle Certified: Oracle Cloud Infrastructure 2024 Generative AI Certified Professional</li>
+            <li>Introduction To Cybersecurity: Cisco Certified</li>
+            <li>CCNA: Introduction to Networks: Cisco Certified</li>
+        </ul>
+    </div>
+
+    <div class="projects" id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Mac Changer - C Language</li>
+            <li>Linux Shell - Java GUI</li>
+            <li>Spin Universe -Image Processing</li>
+        </ul>
+    </div>
+
+    <div class="achievements" id="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>MHTCET 2023 : 98.5 percentile Rank (~3.5k) from ~3.7L</li>
+            <li>LeetCode: 250+ Problems Solved</li>
+            <li>Hackerrank: 2 Star (Java)</li>
+        </ul>
+    </div>
+
+    <div class="co-cu" id="co-cu">
+        <h2>Co curricular</h2>
+        <ul>
+            <li>State player of Throwball (2020)</li>
+            <li>District Player: Badminton (2020)</li>
+            <li>University Player: Volleyball (college team)</li>
+        </ul>
+    </div>
+
+    <div class="langs" id="langs">
+        <h2>Languages</h2>
+        <ul>
+            <li>Fluency:   English, Hindi, Marathi </li>
+        </ul>
+    </div>
+
+    
+</body>
+</html>
